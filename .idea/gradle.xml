@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dinamiclayot3" />
+            <option value="$PROJECT_DIR$/dinamiclayout" />
+            <option value="$PROJECT_DIR$/dynamiclayout2" />
+            <option value="$PROJECT_DIR$/intentfilter" />
+            <option value="$PROJECT_DIR$/menuContext" />
+            <option value="$PROJECT_DIR$/menuContextXML" />
+            <option value="$PROJECT_DIR$/menuadv" />
+            <option value="$PROJECT_DIR$/menusimple" />
+            <option value="$PROJECT_DIR$/p0111_resvalues" />
+            <option value="$PROJECT_DIR$/p0271_getintentaction" />
+            <option value="$PROJECT_DIR$/p0282_intentextras" />
+            <option value="$PROJECT_DIR$/p0291_simpleactivityresult" />
+            <option value="$PROJECT_DIR$/p0301_activityresult" />
+            <option value="$PROJECT_DIR$/simpleanimation" />
+            <option value="$PROJECT_DIR$/simplecalculator" />
+            <option value="$PROJECT_DIR$/twoactivity" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

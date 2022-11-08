@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "FirstLesson"
+include ':app'
+include ':p0111_resvalues'
+include ':menusimple'
+include ':menuadv'
+include ':menuContext'
+include ':menuContextXML'
+include ':dinamiclayout'
+include ':dynamiclayout2'
+include ':dinamiclayot3'
+include ':simplecalculator'
+include ':simpleanimation'
+include ':twoactivity'
+include ':intentfilter'
+include ':p0271_getintentaction'
+include ':p0282_intentextras'
+include ':p0291_simpleactivityresult'
+include ':p0301_activityresult'
