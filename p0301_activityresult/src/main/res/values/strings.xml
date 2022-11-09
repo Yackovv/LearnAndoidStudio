@@ -6,4 +6,7 @@
     <string name="red_color">Red</string>
     <string name="green_color">Green</string>
     <string name="blue_color">Blue</string>
+    <string name="left_align">Left</string>
+    <string name="center_align">Center</string>
+    <string name="right_align">Right</string>
 </resources>
