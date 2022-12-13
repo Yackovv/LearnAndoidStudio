@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">P0311_SimpleIntents</string>
+<<<<<<< HEAD
+    <string name="web">Web</string>
+    <string name="map">Map</string>
+    <string name="call">Call</string>
+=======
     <string name="Web">Web</string>
     <string name="Map">Map</string>
     <string name="Call">Call</string>
+>>>>>>> d0d57ea0f8a07c50099951adfa607fb974e4a167
 </resources>
