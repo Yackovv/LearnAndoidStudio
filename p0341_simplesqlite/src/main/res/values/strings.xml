@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">P0341_SimpleSQLite</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="input_email">Input email</string>
+    <string name="input_name">Input name</string>
+    <string name="add">Add</string>
+    <string name="read">Read</string>
+    <string name="clear">Clear</string>
+</resources>
