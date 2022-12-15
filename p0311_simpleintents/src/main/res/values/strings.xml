@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">P0311_SimpleIntents</string>
-<<<<<<< HEAD
     <string name="web">Web</string>
     <string name="map">Map</string>
     <string name="call">Call</string>

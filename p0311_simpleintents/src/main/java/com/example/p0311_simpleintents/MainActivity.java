@@ -8,11 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-=======
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
->>>>>>> d0d57ea0f8a07c50099951adfa607fb974e4a167
 
     Button btnWeb;
     Button btnMap;
@@ -21,11 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         setContentView(R.layout.activity_main);
-=======
-        setContentView(R.layout.main);
->>>>>>> d0d57ea0f8a07c50099951adfa607fb974e4a167
 
         btnWeb = findViewById(R.id.btnWeb);
         btnMap = findViewById(R.id.btnMap);
