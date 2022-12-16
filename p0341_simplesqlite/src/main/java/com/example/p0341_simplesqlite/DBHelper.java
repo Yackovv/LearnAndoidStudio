@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -12,12 +13,15 @@ import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
 
+    final String LOG_TAG = "MyLog";
+
     public DBHelper(@Nullable Context context) {
         super(context, "myDB", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.d(LOG_TAG, "--- Create database ---");
         db.execSQL("create table myTable (id integer primary key autoincrement, name text, email text);");
     }
 
@@ -30,16 +34,24 @@ public class DBHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+
+        Log.d(LOG_TAG, "--- Insert in mytable: ---");
+
         contentValues.put("name", data.getName());
         contentValues.put("email", data.getEmail());
-        db.insert("myTable", null, contentValues);
+
+        long rowID = db.insert("myTable", null, contentValues);
+        Log.d(LOG_TAG, "row inserted, ID = " + rowID);
+
         db.close();
     }
 
     public void clearMyDB(){
 
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete("myTable", null, null);
+        int clearCount = db.delete("myTable", null, null);
+        Log.d(LOG_TAG, "--- Database is clear ---");
+        Log.d(LOG_TAG, "--- Delete number rows: " + clearCount);
         db.close();
     }
 
@@ -59,9 +71,32 @@ public class DBHelper extends SQLiteOpenHelper {
                 String email = cursor.getString(emailIndex);
                 Data data = new Data(name, email, id);
                 list.add(data);
+                Log.d(LOG_TAG, "ID = " + id + " name = " + name +" email = "+ email);
             }while(cursor.moveToNext());
         }
+        cursor.close();
         db.close();
         return list;
+    }
+
+    public void updateMyDB(String id, Data data){
+
+        if(!id.equalsIgnoreCase("")) {
+            SQLiteDatabase db = this.getWritableDatabase();
+            ContentValues contentValues = new ContentValues();
+            contentValues.put("name", data.getName());
+            contentValues.put("email", data.getEmail());
+            db.update("myTable", contentValues, "id = ?", new String[] {id});
+            db.close();
+        }
+    }
+
+    public void deleteOneInMyDB(String id){
+
+        if(!id.equalsIgnoreCase("")){
+            SQLiteDatabase db = this.getWritableDatabase();
+            db.delete("MyTable", "id = " + id, null);
+            db.close();
+        }
     }
 }

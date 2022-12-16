@@ -1,8 +1,8 @@
 package com.example.p0341_simplesqlite;
 
 public class Data {
-    private String name;
-    private String email;
+    private final String name;
+    private final String email;
     private int id;
 
      public Data(String name, String email){
@@ -27,8 +27,4 @@ public class Data {
      public int getId(){
          return id;
      }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 }
